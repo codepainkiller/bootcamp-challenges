@@ -1,0 +1,46 @@
+body {
+    margin: 2% 5%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo {
+    height: 100px;
+    margin-bottom: 40px;
+}
+
+#app {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pokemon-card {
+    border: 2px solid #8abeee;
+    border-radius: 4%;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.pokemon-card > img {
+    height: 200px;
+    padding: 15px;
+}
+
+.pokemon-card > div {
+
+    z-index: 100;
+    border-radius: 0 0 3% 3%;
+    text-align: center;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 6px;
+    color: white;
+    background-color: #8abeee;
+}
