@@ -1,0 +1,17 @@
+{
+  "name": "my-team-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:scss": "node-sass src/scss/style.scss src/css/style.css",
+    "scss": "node-sass --watch src/scss -o src/css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.team {
+  padding: 8% 10% 2% 10%; }
+  @media only screen and (max-width: 600px) {
+    .team {
+      padding: 10% 4%; } }
+
+.team__details {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+  align-items: flex-start; }
+  @media only screen and (max-width: 600px) {
+    .team__details {
+      flex-direction: column; } }
+  .team__details .team__title {
+    flex: 1;
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+    font-size: 36px;
+    margin-top: 0; }
+  .team__details .team__description {
+    flex: 1; }
+    .team__details .team__description .team__subtitle {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      margin-top: 0; }
+    .team__details .team__description .team__information {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      font-size: 18px; }
+
+.team__crew {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 100px 0; }
+  .team__crew .member {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    height: 560px;
+    flex-basis: 33.333333%; }
+    .team__crew .member .member__profile {
+      display: flex;
+      flex-direction: row; }
+      .team__crew .member .member__profile .member__role {
+        margin: 0;
+        text-transform: uppercase;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        font-family: 'PT Serif', serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px; }
+      .team__crew .member .member__profile .member__photo {
+        height: 400px;
+        margin-right: 5px; }
+    .team__crew .member .member__name {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      margin: 10px 0 0; }
+  .team__crew .member--two, .team__crew .member--five {
+    justify-content: flex-end; }
+
+.team__footer {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #A9A9A9; }
+  .team__footer b {
+    text-decoration: underline;
+    cursor: pointer; }
