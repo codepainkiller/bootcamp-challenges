@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(173, 163, 163);
+}
+.container {
+    width: 500px;
+    height: 1000px;
+    border: 1px white;
+}
+
+.container::before {
+    content: "Selena";
+    font-size: 80px;
+    color: yellow;
+    position: absolute;
+    top: 100px;
+    z-index: 150;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.bg-jungle {
+    background: url("./bg-jungle.jpeg") no-repeat center center;
+    width: 100%;
+    height: 843px;
+    background-size: cover;
+    filter: blur(8px);
+    -webkit-filter: blur(3px);
+}
+
+.bg-selena {
+    background: url("./bg-selena.png") no-repeat center center;
+    width: 500px;
+    height: 1000px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+}
+
+
